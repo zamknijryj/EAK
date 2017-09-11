@@ -1,0 +1,23 @@
+{% extends 'homepage/base.html' %}
+{% load markdown_deux_tags %}
+
+{% block title %}Aktualności | {{ block.super }}{% endblock %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="row">
+            <div class="col-md-8 mx-auto mt-5 mb-5">
+                <p class="date" style="">{{ post.publish|date:"j E Y"}}</p>
+                <h1 class="post-title mb-4">{{ post.title }}</h1>
+                {% if post.image %}
+                    <img src="{{ post.image.url }}" class="img-fluid rounded mx-auto d-block mb-4" alt="Zdjęcie do posta {{ post.title }}">
+                {% endif %}
+                <div class="intro">
+                    {{ post.body|markdown|truncatewords_html:50 }}
+                </div>
+
+                <a href="{{ post.get_absolute_url }}" class="btn btn-primary">Czytaj dalej</a>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

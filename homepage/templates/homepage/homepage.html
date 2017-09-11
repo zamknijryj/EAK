@@ -1,0 +1,53 @@
+{% extends "homepage/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12 mx-auto mt-5">
+            <div class="jumbotron">
+                <h1 class="display-3" style="text-align: center;">EAK - Zapisz się już dziś !</h1>
+                <p class="lead">Na wojnie nie liczy się, że wygrasz, liczy się, że przetrwasz.</p>
+                <hr class="my-4">
+                <p>Zostań człnkiem naszej armii już dziś !</p>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="{% url 'rekrutacja' %}" role="button">Zapisz się !</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    {# <br><br><br>#}
+
+    <div class="row">
+        <div class="col-md-4 mt-5 mb-5 mx-auto wow bounceIn">
+            <img src="{% static 'img/homepage/krolewski-sztab-glowny.png' %}" class="img-fluid rounded mx-auto xte d-block" alt="">
+        </div>
+        <div class="col-md-4 mt-5 wow bounceIn">
+            <a href="{% url 'majordom-koronny' %}">
+                <img src="{% static 'img/homepage/majordom.png' %}" class="img-fluid rounded mx-auto d-block" alt="">
+            </a>
+        </div>
+
+        <div class="col-md-4 mt-5 mb-5 mx-auto wow bounceIn">
+            <a href="{% url 'obrona-terytorialna' %}">
+                <img src="{% static 'img/homepage/krolewska-obrona-terytorialna.png' %}" class="img-fluid rounded mx-auto d-block" alt="">
+            </a>
+
+        </div>
+        <div class="col-md-4 mb-5 mx-auto wow bounceIn">
+            <a href="{% url 'sily-operacyjne' %}">
+                <img src="{% static 'img/homepage/krolewskie-sily-operacyjne.png' %}" class="img-fluid rounded mx-auto d-block" alt="">
+            </a>
+        </div>
+        <div class="col-md-4 mb-5 wow bounceIn">
+            <a href="{% url 'zakon' %}">
+                <img src="{% static 'img/homepage/zakon-rycerski.png' %}" class="img-fluid rounded mx-auto d-block" alt="">
+            </a>
+        </div>
+        <div class="col-md-4 mb-5 wow bounceIn">
+            <a href="{% url 'gwardia' %}">
+                <img src="{% static 'img/homepage/gwardia-krolewska.png' %}" class="img-fluid rounded mx-auto d-block" alt="">
+            </a>
+        </div>
+
+    </div>
+{% endblock %}

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Signika');
+@import url('https://fonts.googleapis.com/css?family=Cousine|Ubuntu');
+@font-face {
+    font-family: "Gotham M";
+    src: url("/static/fonts/Gotham-Medium.otf") format("opentype");
+}
+
+body {
+    background: url("/static/img/homepage/bg.png") !important;
+}
+
+.eak-link {
+    color: #fff !important;
+    width: 140px;
+    text-align: center;
+    border: 2px solid #fff;
+    font-weight: bold;
+    margin: 5px;
+    transition: 0.5s
+}
+
+.eak-link:hover {
+    color: #0082F9 !important;
+    background-color: #fff;
+}
+
+.btn-primary {
+    background-color: #0082F9 !important;
+}
+
+.jumbotron hr {
+    border-top: 1px solid #fff !important;
+}
+
+.jumbotron {
+    background: url('/static/img/rejestr/test.jpeg');
+    background-size: cover;
+    color: #fff;
+}
+
+.jumbotron-rekrutacja {
+    background: url('/static/img/rejestr/ask-Unclesamwantyou-E.jpeg');
+    background-size: cover;
+    height: 385px;
+    color: #fff;
+}
+
+.test2 {
+    margin-left: 175px;
+}
+
+.date {
+    font-weight: bold;
+}
+
+.avatar {
+    width: 70px;
+    float: left;
+    margin-right: 15px;
+}
+
+.sign {
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 75px;
+}
+
+.wniosek {
+    background-color: #eee;
+    color: #000;
+    font-family: 'Menlo', monospace;
+    padding: 10px;
+}
+
+.wniosek-pogrubiony {
+    font-size: 22px;
+}
+
+.intro {
+    font-family: 'Gotham M', sans-serif;
+    font-size: 18px;
+}
+
+.uzyskanie_obywatelstwa {
+    font-size: 22px;
+}
+
+.title {
+    font-size: 22px;
+}
+
+.vtquote, .vtquote .vtquote .vtquote {
+    background-color: #e8f2fa;
+    border: 1px solid #a9c7e0;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 6px;
+    color: #0b5690;
+    font-style: italic;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    margin-bottom: 4px;
+    margin-top: 8px;
+}
+
+.post-body {
+    font-family: 'Gotham M', sans-serif;
+    font-size: 18px;
+    font-weight: medium;
+}
+
+.majordom_table {
+    font-family: 'Gotham M', sans-serif;
+    color: white;
+    padding: 5px;
+}
+
+td {
+    padding: 10px;
+}

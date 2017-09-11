@@ -1,0 +1,102 @@
+{% extends 'homepage/base.html' %}
+{% load staticfiles %}
+{% block title %} Majordom Koronny | {{ block.super }}{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12 mx-auto mt-5">
+            <h3 class="display-4 text-center">Majordom Koronny</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 mx-auto mt-5 mb-5">
+            <table class="majordom_table mx-auto" style="border:1px solid rgb(170, 170, 170);width:280px; border-collapse:collapse;font-size:92%;text-align:left;" >
+                <tr style="text-align:center; background-color:#D1A917; font-size:100%; font-weight:bold;">
+                    <td colspan="2">
+                        <img src="{% static 'img/majordom/100.png'%}" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center; background-color:#D1A917;">Obecny Majordom</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center; background-color:#fff; font-size:92%;">
+                        <img src="{% static 'img/rejestr/vonWolff.jpg' %}" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center; background-color:#D1A917; border-top:1px solid #43474B; border-top: 1px solid #43474B;">Funkcja państwowa</td>
+                </tr>
+                <tr>
+                    <td style="background:#43474B; vertical-align:top;">Państwo</td>
+                    <td style="background:#999;">
+                        <img src="https://vignette4.wikia.nocookie.net/micropedia/images/b/b1/Flaga_elderland.png/revision/latest/scale-to-width-down/22?cb=20061125130226">
+                        Elderland
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#43474B; vertical-align:top;">Data formalnego utworzenia</td>
+                    <td style="background:#999; border-top: 1px solid #43474B">
+                        16 sierpnia 2015
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#43474B; vertical-align:top;">Pierwszy</td>
+                    <td style="background:#999; border-top: 1px solid #43474B">
+                        Daniel von Witt
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#43474B; vertical-align:top;">Obecny</td>
+                    <td style="background:#999; border-top: 1px solid #43474B">
+                        Wilhelm von Wolff
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#43474B; vertical-align:top;">Obecny od</td>
+                    <td style="background:#999; border-top: 1px solid #43474B">
+                        1 stycznia 2017
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#43474B; vertical-align:top;">Siedziba</td>
+                    <td style="background:#999; border-top: 1px solid #43474B">
+                        Elder
+                    </td>
+            </table>
+        </div>
+        <div class="col-md-8 mx-auto mt-5 mb-5">
+            <div class="intro">
+                <p class="text-center title"><b>OPIS STANOWISKA</b></p>
+                <p>
+                    Majordom jest szefem rządu Królestwa Elderlandu powoływanym i odwoływanym przez Króla na wniosek Lorda Strażnika Koronnego. Z racji swej funkcji jest również głównodowodzącym Elderlandzką Armią Królewską. W razie nieobsadzenia tego urzędu jego funkcje
+                    pełni Lord Strażnik Koronny. Działalność, prawa, kompetencje i obowiązki Majordoma reguluje Ustawa Rady Koronnej z dnia 16 sierpnia 2015 roku o Majordomie.
+                </p>
+            </div>
+            <br>
+            <div class="intro">
+                <p class="text-center uzyskanie_obywatelstwa"><b>OBOWIĄZKI</b></p>
+                <p>
+                    <ul>
+                        <li>
+                            Stawienie się na każde wezwanie Króla, Lorda Strażnika Koronnego, lub Rady Koronnej, w celu złożenia wyjaśnień, raportu lub udzielenia informacji.
+                        </li>
+                        <li>
+                            Wykonywanie ustaw i edyktów.
+                        </li>
+                        <li>
+                            Kierowanie administracją rządową
+                        </li>
+                        <li>
+                            Występowanie w ochronie interesów Królewstwa w kraju i poza jego granicami
+                        </li>
+                        <li>
+                            Stanie na straży suwerenności i bezpieczeństwa Królestwa.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

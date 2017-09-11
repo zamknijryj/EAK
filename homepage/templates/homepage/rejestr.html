@@ -1,0 +1,225 @@
+{% extends "homepage/base.html" %}
+{% load staticfiles %}
+
+{% block title %} Żołnierze | {{ block.super }}{% endblock %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-md-12 mx-auto mt-5">
+            <h1 class="text-center display-4">Służba czynna</h1>
+        </div>
+        <div class="col-md-3 mx-auto mt-5">
+            <div class="card mx-auto" style="width: 15rem;">
+                <img class="card-img-top" src="{% static 'img/rejestr/Wolff.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Wilhelm von Wolff</h4>
+                    <p class="card-text">
+                        <hr>
+                        <span class="text-muted">Stopień: </span>Major
+                        <hr>
+                        <span class="text-muted">Stanowisko: </span>Majordom Koronny
+                        <hr>
+                        <span class="text-muted">W armii od: </span> 23.12.2015
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mx-auto mt-5">
+            <div class="card mx-auto" style="width: 15rem;">
+                <img class="card-img-top" src="{% static 'img/rejestr/vonWitt.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Daniel von Witt</h4>
+                    <p class="card-text">
+                        <hr>
+                        <span class="text-muted">Stopień: </span>Komandor podporucznik
+                        <hr>
+                        <span class="text-muted">Stanowisko: </span>Szef sztabu
+                        <hr>
+                        <span class="text-muted">W armii od: </span> 17.12.2015
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mx-auto mt-5">
+            <div class="card mx-auto" style="width: 15rem;">
+                <img class="card-img-top" src="{% static 'img/rejestr/Nassau.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Fryderyk Orański-Nassau</h4>
+                    <p class="card-text">
+                        <hr>
+                        <span class="text-muted">Stopień: </span>Starszy gwardzista
+                        <hr>
+                        <span class="text-muted">Stanowisko: </span>&#x2014
+                        <hr>
+                        <span class="text-muted">W armii od: </span> 07.09.2016
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mx-auto mt-5">
+            <div class="card mx-auto" style="width: 15rem;">
+                <img class="card-img-top" src="{% static 'img/rejestr/habsuburg.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Tomasz von Habsburg</h4>
+                    <p class="card-text">
+                        <hr>
+                        <span class="text-muted">Stopień: </span>Starszy szeregowy
+                        <hr>
+                        <span class="text-muted">Stanowisko: </span>&#x2014
+                        <hr>
+                        <span class="text-muted">W armii od: </span> 05.06.2016
+                        <hr>
+                        <span class="text-muted">W rezerwie od: </span> 27.10.2016 do 13.07.2017
+                        {# 13.07.2017 #}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 mx-auto mt-5">
+            <div class="card mx-auto" style="width: 15rem;">
+                <img class="card-img-top" src="{% static 'img/rejestr/juarez.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Jan Dagobard von Maikowski</h4>
+                    <p class="card-text">
+                        <hr>
+                        <span class="text-muted">Stopień: </span>Szeregowy
+                        <hr>
+                        <span class="text-muted">Stanowisko: </span>&#x2014
+                        <hr>
+                        <span class="text-muted">W armii od: </span> 20.01.2017
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 mx-auto mt-5">
+            <h1 class="text-center display-4">Rezerwiści</h1>
+        </div>
+        <div class="col-md-3 mt-5">
+            <div class="card mx-auto" id="card_yaqu" style="width: 15rem;">
+                <img class="card-img-top" src="{% static 'img/rejestr/yaqu.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Michał Yaqu</h4>
+                    <p class="card-text">
+                        <hr>
+                        <span class="text-muted">Stopień: </span>Lotnik
+                        <hr>
+                        <span class="text-muted">Stanowisko: </span>&#x2014
+                        <hr>
+                        <span class="text-muted">W armii od: </span> 16.01.2016
+                        <hr>
+                        <span class="text-muted">W rezerwie od: </span> 08.03.2016
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mt-5">
+            <div class="card mx-auto" id="card_koller" style="width: 15rem;">
+                <img class="card-img-top" src="{% static 'img/rejestr/koller.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Markocujsz van Koller</h4>
+                    <p class="card-text">
+                        <hr>
+                        <span class="text-muted">Stopień: </span>Choroąży
+                        <hr>
+                        <span class="text-muted">Stanowisko: </span>&#x2014
+                        <hr>
+                        <span class="text-muted">W armii od: </span> 24.07.2016
+                        <hr>
+                        <span class="text-muted">W rezerwie od: </span> 05.05.2017
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mt-5">
+            <div class="card mx-auto" id="card_koller" style="width: 15rem;">
+                <img class="card-img-top" src="{% static 'img/rejestr/fryssau.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Leszek van der Fryssau</h4>
+                    <p class="card-text">
+                        <hr>
+                        <span class="text-muted">Stopień: </span>Szeregowy
+                        <hr>
+                        <span class="text-muted">Stanowisko: </span>&#x2014
+                        <hr>
+                        <span class="text-muted">W armii od: </span> 12.12.2016
+                        <hr>
+                        <span class="text-muted">W rezerwie od: </span> &#x2014
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mt-5">
+            <div class="card mx-auto" id="card_koller" style="width: 15rem;">
+                <img class="card-img-top" src="{% static 'img/rejestr/kaguya.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Memoshi Kaguya</h4>
+                    <p class="card-text">
+                        <hr>
+                        <span class="text-muted">Stopień: </span>Szeregowy
+                        <hr>
+                        <span class="text-muted">Stanowisko: </span>&#x2014
+                        <hr>
+                        <span class="text-muted">W armii od: </span> 29.12.2016
+                        <hr>
+                        <span class="text-muted">W rezerwie od: </span> 04.03.2017
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-md-12 mx-auto mt-5">
+            <h1 class="text-center display-4">W stanie spoczynku</h1>
+        </div>
+        <div class="col-md-6 mt-5">
+            <div class="card float-right" id="card_kaufman" style="width: 15rem;">
+                <img class="card-img-top" width="238" height="238" src="{% static 'img/rejestr/kaufman.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Angus Kaufman</h4>
+                    <p class="card-text">
+                        <hr>
+                        <span class="text-muted">Stopień: </span>Marynarz
+                        <hr>
+                        <span class="text-muted">Stanowisko: </span>&#x2014
+                        <hr>
+                        <span class="text-muted">W armii od: </span> 25.01.2016
+                        <hr>
+                        <span class="text-muted">W rezerwie od: </span> 08.03.2016
+                        <hr>
+                        <span class="text-muted">W stanie spoczynku od:
+                        </span> 12.12.2016
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mt-5">
+            <div class="card" id="card_rogdart" style="width: 15rem;">
+                <img class="card-img-top" src="{% static 'img/rejestr/rogdart.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Roger d’Artois</h4>
+                    <p class="card-text">
+                        <hr>
+                        <span class="text-muted">Stopień: </span>Major
+                        <hr>
+                        <span class="text-muted">Stanowisko: </span>&#x2014
+                        <hr>
+                        <span class="text-muted">W armii od: </span> 17.12.2015
+                        <hr>
+                        <span class="text-muted">W rezerwie od: </span> &#x2014
+                        <hr>
+                        <span class="text-muted">W stanie spoczynku od: </span> 05.12.2016
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,55 @@
+body {
+    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/sayagata-400px.png") !important;
+}
+
+.eak-link {
+    color: #fff !important;
+    width: 140px;
+    text-align: center;
+    /*background-color: #D1A917;
+    border: 2px solid #0082F9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+    border: 2px solid #fff;
+    font-weight: bold;
+    margin: 5px;
+    transition: 0.5s
+}
+
+.eak-link:hover {
+    color: #0082F9 !important;
+    background-color: #fff;
+}
+
+.btn-primary {
+    background-color: #0082F9 !important;
+}
+
+.jumbotron hr {
+    border-top: 1px solid #fff !important;
+}
+
+.jumbotron {
+    background: url('/static/img/test.jpeg');
+    background-size: cover;
+    color: #fff;
+}
+
+.test2 {
+    margin-left: 175px;
+}
+
+.date {
+    font-weight: bold;
+}
+
+.avatar {
+    width: 70px;
+    float: left;
+    margin-right: 15px;
+}
+
+.sign {
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 75px;
+}

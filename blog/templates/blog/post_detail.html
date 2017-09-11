@@ -1,0 +1,27 @@
+{% extends "homepage/base.html" %}
+{% load staticfiles %}
+{% load markdown_deux_tags %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-10 mx-auto mt-5">
+            <p class="date" style="">{{ post.publish|date:"j E Y"}}</p>
+            <h1 class="post-title mb-4">{{ post.title }}</h1>
+            {% if post.image %}
+                <img src="{{ post.image.url }}" class="img-fluid rounded mx-auto d-block mb-4" alt="Zdjęcie do posta {{ post.title }}">
+            {% endif %}
+            <div class="intro">
+                {{ post.body|markdown|linebreaks}}
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <img src="{% static 'img/rejestr/vonWolff.png' %}" class="img-fluid avatar mb-5 mt-5" alt="">
+            <p class="sign">mjr. Wilhelm von Wolff</p>
+        </div>
+    </div>
+{% endblock %}
